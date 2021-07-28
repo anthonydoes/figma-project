@@ -1,14 +1,3 @@
-// Get the file
-// Organize by IDs
-// Generate images
-// Add to the site
-
-// loadFile().then(ids => {
-//     loadImages(ids).then(imageUrls => {
-
-//     })
-// })
-
 const loadingTag = document.querySelector("header p.loading");
 const nextTag = document.querySelector("a.next");
 const previousTag = document.querySelector("a.previous");
