@@ -96,7 +96,7 @@ loadFile("Wue04XBMTxRe4kIQnAAJRB")
     }
 
     const moveSlider = function () {
-        sliderTag.style.transform = `translate(${currentSlide * -100}vw, 0)`;
+        sliderTag.style.transform = `translate(${currentSlide * -105}vw, 0)`;
         stepsTag.innerHTML = `${currentSlide + 1} / ${totalSlides}`;
     }
 
