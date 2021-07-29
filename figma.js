@@ -40,7 +40,7 @@ const loadImages = function (obj) {
     const key = obj.key
     const ids = obj.ids.join(",")
 
-    return fetch("https://api.figma.com/v1/images/" + key + "?ids=" + ids + "&scale=1", apiHeaders)
+    return fetch("https://api.figma.com/v1/images/" + key + "?ids=" + ids + "&scale=.65", apiHeaders)
     .then(response => response.json())
     .then(data => {
         return obj.ids.map(id => {
@@ -69,7 +69,7 @@ const addImageToSite = function (urls) {
 loadFile("Wue04XBMTxRe4kIQnAAJRB")
     .then(file => {
         loadingTag.innerHTML = file.title
-        document.title = file.title + " - AnthonyDoes"
+        document.title = file.title + " - AnthonyDoesDev"
         return file
     })
     .then(file => loadImages(file))
